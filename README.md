@@ -1,4 +1,4 @@
-# Qwen3-ASR 电影字幕生成（120 分钟）
+# Qwen3-ASR 电影字幕生成
 
 本项目用于给完整电影生成 SRT 字幕，基于 Qwen3-ASR-1.7B。
 
@@ -53,11 +53,11 @@ python scripts/movie_subtitle.py \
 
 ```bash
 python scripts/movie_subtitle.py \
-  --input /home/syz/Desktop/to/movie.mp4 \
-  --output /home/syz/Desktop/to/output.srt \
+  --input /path/movie.mp4 \
+  --output /path/output.srt \
   --segment-seconds 300 \
-  --model /home/syz/Desktop/model/modelscope/models/Qwen3-ASR-1.7B \
-  --forced-aligner /home/syz/Desktop/model/modelscope/models/Qwen3-ForcedAligner-0.6B \
+  --model /path/models/Qwen3-ASR-1.7B \
+  --forced-aligner /path/models/Qwen3-ForcedAligner-0.6B \
   --backend vllm
 ```
 ## 断点续跑 / 失败重试
