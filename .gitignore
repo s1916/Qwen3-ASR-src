@@ -1,1 +1,6 @@
 tmp_asr/
+command.md
+.venv/
+.python-version
+main.py
+pyproject.toml
